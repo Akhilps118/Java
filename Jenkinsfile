@@ -3,8 +3,8 @@ pipeline {
 		stages {
 			stage ('Build') { 
 			    steps {
-			    mvn clean insatll
-			        }   
+			    sh mvn clean insatll
+			   	  }
 				}
 			}	
 		}
