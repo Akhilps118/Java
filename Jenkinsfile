@@ -3,7 +3,7 @@ pipeline {
 		stages {
 			stage ('Build') { 
 			    steps {
-			    sh 'mvn clean insatll'
+			    sh 'mvn insatll'
 				archiveArtifactss artifacts: '**/target/*.jar'
 			   	  }
 				}
