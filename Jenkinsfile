@@ -1,6 +1,7 @@
 pipeline {
 	agent any
-	tools maven 'Maven'
+	tools {
+		maven 'Maven'
 	stages {
 		stage ('git') { 
 			steps {
@@ -10,7 +11,7 @@ pipeline {
 			   	
 				sh 'mvn clean install'
 				  }
-				
+		}
 			}
 	             
 		}
